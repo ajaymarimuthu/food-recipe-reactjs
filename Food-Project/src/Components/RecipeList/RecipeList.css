@@ -1,0 +1,6 @@
+.recipelist{
+    /* border: 6px solid blue; */
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
