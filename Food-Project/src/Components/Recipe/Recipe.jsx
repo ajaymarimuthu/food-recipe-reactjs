@@ -12,9 +12,9 @@ function Recipe({ data }) {
                 <h3>Dish Type : <span>{data.recipe.dishType}</span></h3>
                 <h3>Meal Type : <span>{data.recipe.mealType}</span></h3>
                 <h3>Source : <span>{data.recipe.source}</span></h3>
-                {/* <h3>Label : <span>{data.recipe.label}</span></h3> */}
-
                 <h3>cautions : <span>{data.recipe.cautions}</span></h3>
+
+                 {/* <h3>Label : <span>{data.recipe.label}</span></h3> */}
 
             </div>
 

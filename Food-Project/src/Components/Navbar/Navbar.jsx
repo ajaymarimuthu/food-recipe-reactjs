@@ -1,14 +1,14 @@
 import React from 'react'
 import './Navbar.css'
 
-function Navbar() {
+function Navbar({handleCuisine,handleClick,handleDishType,handleDiet}) {
     return (
         <div className='navbar'>
 
             <h1>Awesome Recipes</h1>
 
-            <div className="option-group">
-                <select className='select'>
+            <div className="option-group" >
+                <select className='select' onChange={handleCuisine}  >
                     <option >Cuisine Type</option>
                     <option value="french">French</option>
                     <option value="american">American</option>
@@ -18,8 +18,8 @@ function Navbar() {
                     <option value="british">British</option>
                     <option value="nordian">Nordian</option>
                 </select>
-
-                <select className='select'>
+ 
+                 <select className='select' onChange={handleDishType}>
                     <option >Dish Type</option>
                     <option value="sandwiches">SandWiches</option>
                     <option value="starter">Starter</option>
@@ -28,18 +28,18 @@ function Navbar() {
 
                     <option value="desserts">Desserts</option>
                     <option value="salad">Salad</option>
-                </select>
+                </select>  
 
-                <select className='select'>
-                    <option >Cautions</option>
-                    <option value="sulfites">Sulfites</option>
-                    <option value="gluten">Gluten</option>
+                <select className='select' onChange={handleDiet}>
+                    <option >Diet</option>
+                    <option value="balanced">Balanced</option>
+                    <option value="high-protein”">High-protein</option>
              
                 </select>
-                
+                  
             </div>
 
-            <button className='btn'>Search</button>
+            <button className='btn' onClick={handleClick}>Search</button>
     
 
 

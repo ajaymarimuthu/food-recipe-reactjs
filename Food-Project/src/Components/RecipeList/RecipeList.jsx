@@ -3,6 +3,8 @@ import Recipe from '../Recipe/Recipe'
 import './RecipeList.css'
 
 function RecipeList({ handleClick, data }) {
+    // console.log(data);
+
     return (
 
         <>
@@ -10,9 +12,9 @@ function RecipeList({ handleClick, data }) {
             <div className='recipelist'>
 
                 {/* <button onClick={handleClick}>Click me</button> */}
-
-                {data.map((item, index) => {
-                    return <Recipe key={index} data={item} />
+                
+                {data.map((data, index) => {
+                    return <Recipe key={index} data={data} />
                 })}
 
             </div>
