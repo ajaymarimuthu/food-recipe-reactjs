@@ -2,6 +2,10 @@ import React from 'react'
 import './Navbar.css'
 
 function Navbar({handleCuisine,handleClick,handleDishType,handleDiet}) {
+
+
+    
+
     return (
         <div className='navbar'>
 
@@ -34,6 +38,11 @@ function Navbar({handleCuisine,handleClick,handleDishType,handleDiet}) {
                     <option >Diet</option>
                     <option value="balanced">Balanced</option>
                     <option value="high-protein”">High-protein</option>
+                    <option value="high-fiber">High-fiber</option>
+                    <option value="low-fat">Low-fat</option>
+                    <option value="low-carb">Low-carb</option>
+                    <option value="low-sodium">Low-sodium</option>
+             
              
                 </select>
                   
